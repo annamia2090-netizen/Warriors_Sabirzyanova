@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Warriors_Sabirzyanova"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Практическая работа 9" Height="450" Width="800" MinWidth="800" MinHeight="450">
+    <Grid Background="#FF424242">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Border
+            BorderBrush="Black"
+            BorderThickness="1"
+            Margin="10"
+            Background="#FFFDFDFD"
+            Grid.Column="0"
+            MouseDown="AttackLightWarrior">
+            <Grid>
+                <Image
+                    Margin="10,10,10.2,120"
+                    Source="/Image/light_warrior.jpg"/>
+                <Label
+                    Content="Воин в легких доспехах:"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom"
+                    FontWeight="Bold"
+                    Margin="10, 0, 0, 80"/>
+                <Label
+                    x:Name="lightHealth"
+                    Content="Жизненные показатели: 100"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom"
+                    Margin="10, 0, 0, 50"/>
+            </Grid>
+        </Border>
+        <Border
+            BorderBrush="Black"
+            BorderThickness="1"
+            Margin="10"
+            Background="#FFFDFDFD"
+            Grid.Column="1"
+            MouseDown="AttackHeavyWarrior">
+            <Grid>
+                <Image
+                    Margin="10,10,10.2,120"
+                    Source="/Image/heavy_warrior.jpg"/>
+                <Label
+                    Content="Воин в тяжелых доспехах:"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom"
+                    FontWeight="Bold"
+                    Margin="10, 0, 0, 80"/>
+                <Label
+                    x:Name="heavyHealth"
+                    Content="Жизненные показатели: 100"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom"
+                    Margin="10, 0, 0, 50"/>
+            </Grid>
+        </Border>
     </Grid>
 </Window>
